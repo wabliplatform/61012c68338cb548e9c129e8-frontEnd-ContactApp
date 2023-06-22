@@ -1,0 +1,3 @@
+let apiContactApi = new TempApi.ContactApi();import TempApi from '../src/index';let contact = new TempApi.Contact();document.getElementById('igkvh').onclick = (event) => {
+    event.preventDefault();
+    contact['fullname'] = document.querySelector("[annotationname = 'fullname']").value;contact['company'] = document.querySelector("[annotationname = 'company']").value;contact['comment'] = document.querySelector("[annotationname = 'comment']").value;apiContactApi.createcontact( contact, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); {   location.href= '/homepage' ;}}});};window.onload = () => {};

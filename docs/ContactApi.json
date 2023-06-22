@@ -1,0 +1,87 @@
+
+[{
+    "methodType":"POST",
+    "methodName":"createcontact",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Contact"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":["let contact = new TempApi.Contact();"],
+    "modelNames":["contact"],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.createcontact( contact, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"DELETE",
+    "methodName":"deletecontact",
+    "returnType":{
+
+      "primitive":"true",
+      "type":"null"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.deletecontact( contactId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');/**nextFunction*/}});"
+  },{
+    "methodType":"GETALL",
+    "methodName":"getAllcontact",
+    "returnType":{
+      "primitive":false,
+      "jsType":"Array",
+      "modelName":"[Contact]"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.getAllcontact((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"GETBYPARAMS",
+    "methodName":"getByParamscontact",
+    "returnType":{
+      "primitive":false,
+      "jsType":"Array",
+      "modelName":"[Contact]"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.getByParamscontact( filter, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"GET",
+    "methodName":"getcontact",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Contact"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.getcontact( contactId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  },{
+    "methodType":"PUT",
+    "methodName":"updatecontact",
+    "returnType":{
+      "primitive":false,
+      "jsType":"",
+      "modelName":"Contact"
+    },
+    "importStatement":"import TempApi from '../src/index';",
+    "apiInstance":"let apiContactApi = new TempApi.ContactApi();",
+    "importModelParameter":[],
+    "modelNames":[],
+    "functionNextTemplate":"/**nextFunction*/",
+    "apiCallPromisified":"apiContactApi.updatecontact( contactId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); /**nextFunction*/}});"
+  }
+]
